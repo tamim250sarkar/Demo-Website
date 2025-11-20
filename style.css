@@ -1,0 +1,136 @@
+/* বেসিক রিসেট */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* হেডার এবং নেভিগেশন */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* সেকশন স্টাইলিং */
+section {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+/* হিরো সেকশন */
+.hero {
+    background-color: #e9ecef;
+    padding: 100px 5%;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e7e34;
+}
+
+/* পরিষেবা সেকশন */
+.services h2 {
+    color: #007bff;
+    margin-bottom: 40px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap; /* ছোট স্ক্রিনের জন্য */
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%; /* তিনটি কার্ডের জন্য */
+    min-width: 250px; /* কার্ডের ন্যূনতম প্রস্থ */
+    text-align: left;
+}
+
+.card h3 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+/* যোগাযোগ ফর্ম */
+.contact {
+    background-color: #e9ecef;
+}
+
+#contactForm input[type="text"], 
+#contactForm input[type="email"], 
+#contactForm textarea {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Padding অন্তর্ভুক্ত */
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+/* ফুটার */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
